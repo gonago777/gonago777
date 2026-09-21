@@ -10,9 +10,10 @@ REST API, 인증/인가, DB 연동, 외부 API 및 AI 서버 연동처럼 서비
 
 - **Backend:** Java 17, Spring Boot 3.5.9, Spring Security, Spring Data JPA
 - **Database / Auth:** MySQL, Redis, JWT
-- **Integration:** Spring Boot ↔ FastAPI 연동
-- **주요 구조:** Controller → Service → FastApiClient
-- **주요 흐름:** 공고 분석 → 유사 RFP 검색 → PPT 생성 → 발표 스크립트 생성
+- **Integration:** Spring Boot ↔ FastAPI
+- **Architecture:** Controller → Service → FastApiClient
+- **Flow:** 공고 분석 → 유사 RFP 검색 → PPT 생성 → 발표 스크립트 생성
+- **Auth:** Redis 기반 이메일 인증, JWT Logout Blacklist
 
 Repositories:
 - [Backend](https://github.com/Bigproject-09/backend)
@@ -29,8 +30,7 @@ React 기반 도서 관리 웹 클라이언트입니다.
 - AI 표지 생성 API 연동
 - AWS CodeBuild용 `buildspec.yml` 구성
 
-Repository:
-- [kt_library-website-repo](https://github.com/gonago777/kt_library-website-repo)
+> 현재 저장소는 비공개 상태입니다.
 
 ## Tech Stack
 
